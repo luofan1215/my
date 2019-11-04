@@ -1,0 +1,16 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: log-server
+  data:
+    mongodb:
+      database: log
+      host: 192.168.13.171
+      port: 27017
+rocketmq:
+  namesrvAddr: 192.168.16.175:9876
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
